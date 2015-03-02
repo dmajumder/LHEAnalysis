@@ -1,0 +1,3 @@
+<bin name="SingleBprime" file="SingleBprime.cc">
+  <use name="root"/>
+</bin>
