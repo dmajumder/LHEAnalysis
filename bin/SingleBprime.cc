@@ -51,12 +51,12 @@ void readerExample(std::string& fname) {
   //fout.str(std::string());
   //fout.clear() ;
   //fout << fnamecut << ";p_{T} (#bar{b}) [GeV];" ;
-  //TH1D* hnpart7_pt_Hbar = new TH1D("hnpart7_pt_Hbar" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
+  //TH1D* hnpart9_pt_Hbar = new TH1D("hnpart9_pt_Hbar" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
 
   //fout.str(std::string());
   //fout.clear() ;
   //fout << fnamecut << ";y (#bar{b});" ;
-  //TH1D* hnpart7_y_Hbar  = new TH1D("hnpart7_y_Hbar"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
+  //TH1D* hnpart9_y_Hbar  = new TH1D("hnpart9_y_Hbar"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
 
   fout.str(std::string());
   fout.clear() ;
@@ -103,82 +103,82 @@ void readerExample(std::string& fname) {
   fout.str(std::string());
   fout.clear() ;
   fout << fnamecut << ";p_{T} (T) [GeV];" ;
-  TH1D* hnpart7_pt_tp = new TH1D("hnpart7_pt_tp" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
+  TH1D* hnpart9_pt_tp = new TH1D("hnpart9_pt_tp" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
 
   fout.str(std::string());
   fout.clear() ;
   fout << fnamecut << ";p_{T} (#bar{T}) [GeV];" ;
-  TH1D* hnpart7_pt_tpbar = new TH1D("hnpart7_pt_tpbar" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
+  TH1D* hnpart9_pt_tpbar = new TH1D("hnpart9_pt_tpbar" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
 
   fout.str(std::string());
   fout.clear() ;
   fout << fnamecut << ";y (T);" ;
-  TH1D* hnpart7_y_tp  = new TH1D("hnpart7_y_tp"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
+  TH1D* hnpart9_y_tp  = new TH1D("hnpart9_y_tp"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
 
   fout.str(std::string());
   fout.clear() ;
   fout << fnamecut << ";y (#bar{T});" ;
-  TH1D* hnpart7_y_tpbar  = new TH1D("hnpart7_y_tpbar"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
+  TH1D* hnpart9_y_tpbar  = new TH1D("hnpart9_y_tpbar"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
 
   fout.str(std::string());
   fout.clear() ;
   fout << fnamecut << ";p_{T} (t) [GeV];" ;
-  TH1D* hnpart7_pt_t = new TH1D("hnpart7_pt_t" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
+  TH1D* hnpart9_pt_t = new TH1D("hnpart9_pt_t" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
 
   fout.str(std::string());
   fout.clear() ;
   fout << fnamecut << ";p_{T} (#bar{t}) [GeV];" ;
-  TH1D* hnpart7_pt_tbar = new TH1D("hnpart7_pt_tbar" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
+  TH1D* hnpart9_pt_tbar = new TH1D("hnpart9_pt_tbar" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
 
   fout.str(std::string());
   fout.clear() ;
   fout << fnamecut << ";y (t);" ;
-  TH1D* hnpart7_y_t  = new TH1D("hnpart7_y_t"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
+  TH1D* hnpart9_y_t  = new TH1D("hnpart9_y_t"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
 
   fout.str(std::string());
   fout.clear() ;
   fout << fnamecut << ";y (#bar{t});" ;
-  TH1D* hnpart7_y_tbar  = new TH1D("hnpart7_y_tbar"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
+  TH1D* hnpart9_y_tbar  = new TH1D("hnpart9_y_tbar"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
 
   fout.str(std::string());
   fout.clear() ;
   fout << fnamecut << ";p_{T} (H) [GeV];" ;
-  TH1D* hnpart7_pt_H = new TH1D("hnpart7_pt_H" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
+  TH1D* hnpart9_pt_H = new TH1D("hnpart9_pt_H" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
 
   fout.str(std::string());
   fout.clear() ;
   fout << fnamecut << ";y (H);" ;
-  TH1D* hnpart7_y_H  = new TH1D("hnpart7_y_H"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
+  TH1D* hnpart9_y_H  = new TH1D("hnpart9_y_H"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
 
   fout.str(std::string());
   fout.clear() ;
   fout << fnamecut << ";p_{T} (b) [GeV];" ;
-  TH1D* hnpart7_pt_b = new TH1D("hnpart7_pt_b" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
+  TH1D* hnpart9_pt_b = new TH1D("hnpart9_pt_b" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
 
   fout.str(std::string());
   fout.clear() ;
   fout << fnamecut << ";p_{T} (#bar{b}) [GeV];" ;
-  TH1D* hnpart7_pt_bbar = new TH1D("hnpart7_pt_bbar" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
+  TH1D* hnpart9_pt_bbar = new TH1D("hnpart9_pt_bbar" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
 
   fout.str(std::string());
   fout.clear() ;
   fout << fnamecut << ";y (b);" ;
-  TH1D* hnpart7_y_b  = new TH1D("hnpart7_y_b"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
+  TH1D* hnpart9_y_b  = new TH1D("hnpart9_y_b"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
 
   fout.str(std::string());
   fout.clear() ;
   fout << fnamecut << ";y (#bar{b});" ;
-  TH1D* hnpart7_y_bbar  = new TH1D("hnpart7_y_bbar"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
+  TH1D* hnpart9_y_bbar  = new TH1D("hnpart9_y_bbar"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
 
   fout.str(std::string());
   fout.clear() ;
   fout << fnamecut << ";p_{T} (q) [GeV];" ;
-  TH1D* hnpart7_pt_q = new TH1D("hnpart7_pt_q" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
+  TH1D* hnpart9_pt_q = new TH1D("hnpart9_pt_q" ,(fout.str()).c_str() ,200 ,0.  ,1000) ; 
 
   fout.str(std::string());
   fout.clear() ;
   fout << fnamecut << ";y (q);" ;
-  TH1D* hnpart7_y_q  = new TH1D("hnpart7_y_q"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
+  TH1D* hnpart9_y_q  = new TH1D("hnpart9_y_q"  ,(fout.str()).c_str() ,100 ,-5 , 5) ; 
 
   fout.str(std::string());
   fout.clear() ;
@@ -199,49 +199,49 @@ void readerExample(std::string& fname) {
         p4_tp.SetPxPyPzE(reader1.hepeup.PUP[ii][0], reader1.hepeup.PUP[ii][1], reader1.hepeup.PUP[ii][2], reader1.hepeup.PUP[ii][3]) ; 
         if ( npart == 6 ) hnpart6_pt_tp->Fill(p4_tp.Pt()) ; 
         if ( npart == 6 ) hnpart6_y_tp -> Fill(p4_tp.Rapidity()) ; 
-        if ( npart == 7 ) hnpart7_pt_tp->Fill(p4_tp.Pt()) ; 
-        if ( npart == 7 ) hnpart7_y_tp -> Fill(p4_tp.Rapidity()) ; 
+        if ( npart == 9 ) hnpart9_pt_tp->Fill(p4_tp.Pt()) ; 
+        if ( npart == 9 ) hnpart9_y_tp -> Fill(p4_tp.Rapidity()) ; 
       }
       else if ( reader1.hepeup.IDUP[ii] == -8000001 ) {
         p4_tp.SetPxPyPzE(reader1.hepeup.PUP[ii][0], reader1.hepeup.PUP[ii][1], reader1.hepeup.PUP[ii][2], reader1.hepeup.PUP[ii][3]) ; 
         if ( npart == 6 ) hnpart6_pt_tpbar->Fill(p4_tp.Pt()) ; 
         if ( npart == 6 ) hnpart6_y_tpbar -> Fill(p4_tp.Rapidity()) ; 
-        if ( npart == 7 ) hnpart7_pt_tpbar->Fill(p4_tp.Pt()) ; 
-        if ( npart == 7 ) hnpart7_y_tpbar -> Fill(p4_tp.Rapidity()) ; 
+        if ( npart == 9 ) hnpart9_pt_tpbar->Fill(p4_tp.Pt()) ; 
+        if ( npart == 9 ) hnpart9_y_tpbar -> Fill(p4_tp.Rapidity()) ; 
       }
       else if ( reader1.hepeup.IDUP[ii] == 6 && reader1.hepeup.MOTHUP[ii].first ==  3 && reader1.hepeup.MOTHUP[ii].second ==  3 ) {
         p4_t.SetPxPyPzE(reader1.hepeup.PUP[ii][0], reader1.hepeup.PUP[ii][1], reader1.hepeup.PUP[ii][2], reader1.hepeup.PUP[ii][3]) ; 
-        if ( npart == 7 ) hnpart7_pt_t->Fill(p4_t.Pt()) ; 
-        if ( npart == 7 ) hnpart7_y_t -> Fill(p4_t.Rapidity()) ; 
+        if ( npart == 9 ) hnpart9_pt_t->Fill(p4_t.Pt()) ; 
+        if ( npart == 9 ) hnpart9_y_t -> Fill(p4_t.Rapidity()) ; 
       }
       else if ( reader1.hepeup.IDUP[ii] == -6 && reader1.hepeup.MOTHUP[ii].first == 3 && reader1.hepeup.MOTHUP[ii].second ==  3 ) {
         p4_t.SetPxPyPzE(reader1.hepeup.PUP[ii][0], reader1.hepeup.PUP[ii][1], reader1.hepeup.PUP[ii][2], reader1.hepeup.PUP[ii][3]) ; 
-        if ( npart == 7 ) hnpart7_pt_tbar->Fill(p4_t.Pt()) ; 
-        if ( npart == 7 ) hnpart7_y_tbar -> Fill(p4_t.Rapidity()) ; 
+        if ( npart == 9 ) hnpart9_pt_tbar->Fill(p4_t.Pt()) ; 
+        if ( npart == 9 ) hnpart9_y_tbar -> Fill(p4_t.Rapidity()) ; 
       }
       else if ( abs(reader1.hepeup.IDUP[ii]) == 25 && reader1.hepeup.MOTHUP[ii].first ==  3 && reader1.hepeup.MOTHUP[ii].second ==  3 ) {
         p4_H.SetPxPyPzE(reader1.hepeup.PUP[ii][0], reader1.hepeup.PUP[ii][1], reader1.hepeup.PUP[ii][2], reader1.hepeup.PUP[ii][3]) ; 
-        if ( npart == 7 ) hnpart7_pt_H->Fill(p4_H.Pt()) ; 
-        if ( npart == 7 ) hnpart7_y_H -> Fill(p4_H.Rapidity()) ; 
+        if ( npart == 9 ) hnpart9_pt_H->Fill(p4_H.Pt()) ; 
+        if ( npart == 9 ) hnpart9_y_H -> Fill(p4_H.Rapidity()) ; 
       }
       else if ( reader1.hepeup.IDUP[ii] == 5 && reader1.hepeup.MOTHUP[ii].first ==  1 && reader1.hepeup.MOTHUP[ii].second ==  2 ) {
         p4_b.SetPxPyPzE(reader1.hepeup.PUP[ii][0], reader1.hepeup.PUP[ii][1], reader1.hepeup.PUP[ii][2], reader1.hepeup.PUP[ii][3]) ; 
         if ( npart == 6 ) hnpart6_pt_b->Fill(p4_b.Pt()) ; 
         if ( npart == 6 ) hnpart6_y_b -> Fill(p4_b.Rapidity()) ; 
-        if ( npart == 7 ) hnpart7_pt_b->Fill(p4_b.Pt()) ; 
-        if ( npart == 7 ) hnpart7_y_b -> Fill(p4_b.Rapidity()) ; 
+        if ( npart == 9 ) hnpart9_pt_b->Fill(p4_b.Pt()) ; 
+        if ( npart == 9 ) hnpart9_y_b -> Fill(p4_b.Rapidity()) ; 
       }
       else if ( reader1.hepeup.IDUP[ii] == -5 && reader1.hepeup.MOTHUP[ii].first == 1 && reader1.hepeup.MOTHUP[ii].second ==  2 ) {
         p4_b.SetPxPyPzE(reader1.hepeup.PUP[ii][0], reader1.hepeup.PUP[ii][1], reader1.hepeup.PUP[ii][2], reader1.hepeup.PUP[ii][3]) ; 
         if ( npart == 6 ) hnpart6_pt_bbar->Fill(p4_b.Pt()) ; 
         if ( npart == 6 ) hnpart6_y_bbar -> Fill(p4_b.Rapidity()) ; 
-        if ( npart == 7 ) hnpart7_pt_bbar->Fill(p4_b.Pt()) ; 
-        if ( npart == 7 ) hnpart7_y_bbar -> Fill(p4_b.Rapidity()) ; 
+        if ( npart == 9 ) hnpart9_pt_bbar->Fill(p4_b.Pt()) ; 
+        if ( npart == 9 ) hnpart9_y_bbar -> Fill(p4_b.Rapidity()) ; 
       }
       else if ( abs(reader1.hepeup.IDUP[ii]) < 5 && reader1.hepeup.MOTHUP[ii].first ==  1 && reader1.hepeup.MOTHUP[ii].second ==  2 ) {
         p4_q.SetPxPyPzE(reader1.hepeup.PUP[ii][0], reader1.hepeup.PUP[ii][1], reader1.hepeup.PUP[ii][2], reader1.hepeup.PUP[ii][3]) ; 
-        if ( npart == 7 ) hnpart7_pt_q->Fill(p4_q.Pt()) ; 
-        if ( npart == 7 ) hnpart7_y_q -> Fill(p4_q.Rapidity()) ; 
+        if ( npart == 9 ) hnpart9_pt_q->Fill(p4_q.Pt()) ; 
+        if ( npart == 9 ) hnpart9_y_q -> Fill(p4_q.Rapidity()) ; 
       }
     }
 
@@ -249,43 +249,43 @@ void readerExample(std::string& fname) {
 
   double npart6_pt_bNorm    = hnpart6_pt_b->Integral() ; 
   double npart6_pt_bbarNorm = hnpart6_pt_bbar->Integral() ; 
-  double npart7_pt_bNorm    = hnpart7_pt_b->Integral() ; 
-  double npart7_pt_bbarNorm = hnpart7_pt_bbar->Integral() ; 
+  double npart9_pt_bNorm    = hnpart9_pt_b->Integral() ; 
+  double npart9_pt_bbarNorm = hnpart9_pt_bbar->Integral() ; 
 
   double npart6_y_bNorm    = hnpart6_y_b->Integral() ; 
   double npart6_y_bbarNorm = hnpart6_y_bbar->Integral() ; 
-  double npart7_y_bNorm    = hnpart7_y_b->Integral() ; 
-  double npart7_y_bbarNorm = hnpart7_y_bbar->Integral() ; 
+  double npart9_y_bNorm    = hnpart9_y_b->Integral() ; 
+  double npart9_y_bbarNorm = hnpart9_y_bbar->Integral() ; 
 
   hnpart6_pt_b -> Scale(1./npart6_pt_bNorm) ; 
   hnpart6_pt_bbar -> Scale(1./npart6_pt_bbarNorm) ; 
-  hnpart7_pt_b -> Scale(1./npart7_pt_bNorm) ; 
-  hnpart7_pt_bbar -> Scale(1./npart7_pt_bbarNorm) ; 
+  hnpart9_pt_b -> Scale(1./npart9_pt_bNorm) ; 
+  hnpart9_pt_bbar -> Scale(1./npart9_pt_bbarNorm) ; 
 
   hnpart6_y_b -> Scale(1./npart6_y_bNorm) ; 
   hnpart6_y_bbar -> Scale(1./npart6_y_bbarNorm) ; 
-  hnpart7_y_b -> Scale(1./npart7_y_bNorm) ; 
-  hnpart7_y_bbar -> Scale(1./npart7_y_bbarNorm) ; 
+  hnpart9_y_b -> Scale(1./npart9_y_bNorm) ; 
+  hnpart9_y_bbar -> Scale(1./npart9_y_bbarNorm) ; 
 
   double npart6_pt_tpNorm    = hnpart6_pt_tp->Integral() ; 
   double npart6_pt_tpbarNorm = hnpart6_pt_tpbar->Integral() ; 
-  double npart7_pt_tpNorm    = hnpart7_pt_tp->Integral() ; 
-  double npart7_pt_tpbarNorm = hnpart7_pt_tpbar->Integral() ; 
+  double npart9_pt_tpNorm    = hnpart9_pt_tp->Integral() ; 
+  double npart9_pt_tpbarNorm = hnpart9_pt_tpbar->Integral() ; 
 
   double npart6_y_tpNorm    = hnpart6_y_tp->Integral() ; 
   double npart6_y_tpbarNorm = hnpart6_y_tpbar->Integral() ; 
-  double npart7_y_tpNorm    = hnpart7_y_tp->Integral() ; 
-  double npart7_y_tpbarNorm = hnpart7_y_tpbar->Integral() ; 
+  double npart9_y_tpNorm    = hnpart9_y_tp->Integral() ; 
+  double npart9_y_tpbarNorm = hnpart9_y_tpbar->Integral() ; 
 
   hnpart6_pt_tp -> Scale(1./npart6_pt_tpNorm) ; 
   hnpart6_pt_tpbar -> Scale(1./npart6_pt_tpbarNorm) ; 
-  hnpart7_pt_tp -> Scale(1./npart7_pt_tpNorm) ; 
-  hnpart7_pt_tpbar -> Scale(1./npart7_pt_tpbarNorm) ; 
+  hnpart9_pt_tp -> Scale(1./npart9_pt_tpNorm) ; 
+  hnpart9_pt_tpbar -> Scale(1./npart9_pt_tpbarNorm) ; 
 
   hnpart6_y_tp -> Scale(1./npart6_y_tpNorm) ; 
   hnpart6_y_tpbar -> Scale(1./npart6_y_tpbarNorm) ; 
-  hnpart7_y_tp -> Scale(1./npart7_y_tpNorm) ; 
-  hnpart7_y_tpbar -> Scale(1./npart7_y_tpbarNorm) ; 
+  hnpart9_y_tp -> Scale(1./npart9_y_tpNorm) ; 
+  hnpart9_y_tpbar -> Scale(1./npart9_y_tpbarNorm) ; 
 
   rootoutput->Write();
   rootoutput->Close();
