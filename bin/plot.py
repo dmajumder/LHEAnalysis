@@ -3,7 +3,7 @@
 import os, sys, ROOT
 
 def plot (str): 
-  f = ROOT.TFile.Open("tH_b_LH_narrow_M1800_13TeV.root", "READ")
+  f = ROOT.TFile.Open("tH_b_LH_narrow_M1000_13TeV.root", "READ")
   f.cd()
   
   pt_tp = f.Get("hnpart9_"+str)
@@ -34,3 +34,9 @@ plot("pt_bbar")
 plot("y_bbar")
 plot("pt_q")
 plot("y_q")
+plot("pt_W")
+plot("y_W")
+plot("pt_bfromt")
+plot("y_bfromt")
+plot("pt_lfromw")
+plot("y_lfromw")
