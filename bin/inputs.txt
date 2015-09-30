@@ -1,0 +1,21 @@
+/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/BulkGraviton_zz_llqq_Width20pc_M2000_unweighted_events.lhe 39 
+/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/BulkGraviton_zz_llqq_Width20pc_M4500_unweighted_events.lhe 39 
+/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/BulkGraviton_hh_hbbhbb_Width20pc_M2000_unweighted_events.lhe 39
+/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/BulkGraviton_hh_hbbhbb_Width20pc_M4500_unweighted_events.lhe 39
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/BulkGraviton_zz_llqq_Width20pc_BWCutoff100000_M2000_unweighted_events.lhe 39 
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/BulkGraviton_zz_llqq_Width20pc_BWCutoff100000_M4500_unweighted_events.lhe 39 
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/BulkGraviton_zz_llqq_Width20pc_M1000_unweighted_events.lhe
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/BulkGraviton_zz_llqq_Width20pc_M2500_unweighted_events.lhe
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/BulkGraviton_hh_hbbhbb_Width20pc_BWCutoff100000_M4500unweighted_events.lhe
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/Radion_hh_M2000.lhe
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/Radion_hh_M4500.lhe
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/BulkGraviton_hh_hbbhbb_Width5pc_M2000_unweighted_events.lhe 39
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/BulkGraviton_hh_hbbhbb_Width5pc_M4500_unweighted_events.lhe
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/RSGraviton_hh_hbbhbb_Width20pc_M2000_unweighted_events.lhe
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/RSGraviton_hh_hbbhbb_Width20pc_M4500_unweighted_events.lhe
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/RSGraviton_hh_hbbhbb_Width5pc_M2000_unweighted_events.lhe
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/RSGraviton_hh_hbbhbb_Width5pc_M4500_unweighted_events.lhe
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/Radion_hh_hbbhbb_Width20pc_M2000_unweighted_events.lhe
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/Radion_hh_hbbhbb_Width20pc_M4500_unweighted_events.lhe
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/Radion_hh_hbbhbb_Width5pc_M2000_unweighted_events.lhe
+#/afs/cern.ch/user/d/dm2/eos/cms/store/group/phys_exotica/hh4b/LHE/Radion_hh_hbbhbb_Width5pc_M4500_unweighted_events.lhe

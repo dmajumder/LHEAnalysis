@@ -5,3 +5,8 @@
 <bin name="HHbb" file="HHbb.cc">
   <use name="root"/>
 </bin>
+
+<bin name="DiHiggs" file="DiHiggs.cc">
+  <use name="root"/>
+  <use name="boost"/>
+</bin>
