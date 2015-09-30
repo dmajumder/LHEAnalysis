@@ -191,10 +191,6 @@ def process_hist(path, new_path, files, obj):
     stack.GetXaxis().SetTitleFont(132)
     stack.GetYaxis().SetTitleFont(132)
     hstack = stack.GetHistogram()
-    if options.logy: 
-      stack.SetMaximum(stack.GetMaximum()*105) 
-    else:  
-      stack.SetMaximum(stack.GetMaximum()*1.05) 
     if options.ratio or (options.sticky and "Ratio" in name):
         pads, stack, stack_ratio = add_ratio_plot(hists, stack, counter)
         pads[1].cd()
@@ -216,6 +212,10 @@ def process_hist(path, new_path, files, obj):
     if options.underflow or (options.sticky and "Underflow" in name):
         display_underflow(stack, hist)
     legend.Draw()
+    if options.logy: 
+      stack.SetMaximum(hstack.GetMaximum()*2050) 
+    else:  
+      stack.SetMaximum(hstack.GetMaximum()*1.25) 
     save_plot(stack, options.plot_dir, path, name, counter)
 
 
