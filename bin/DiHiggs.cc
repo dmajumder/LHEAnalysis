@@ -43,8 +43,22 @@ void readerExample(std::string fname, int rescode, int maxEvents) {
 
   fout.str(std::string());
   fout.clear() ;
+  fout << fnamecut.at(fnamecut.size()-1) << ";inv. M(ZZ) [GeV];" ;
+  TH1D* h_mass_zzinv = new TH1D("h_mass_zzinv" ,(fout.str()).c_str() ,500 ,0.  ,5000) ; 
+  fout.str(std::string());
+  fout.clear() ;
+
+  fout.str(std::string());
+  fout.clear() ;
+  fout << fnamecut.at(fnamecut.size()-1) << ";inv. M(WW) [GeV];" ;
+  TH1D* h_mass_wwinv = new TH1D("h_mass_wwinv" ,(fout.str()).c_str() ,500 ,0.  ,5000) ; 
+  fout.str(std::string());
+  fout.clear() ;
+
+  fout.str(std::string());
+  fout.clear() ;
   fout << fnamecut.at(fnamecut.size()-1) << ";inv. M(HH) [GeV];" ;
-  TH1D* h_mass_hhinv = new TH1D("h_mass_hhinv" ,(fout.str()).c_str() ,250 ,0.  ,5000) ; 
+  TH1D* h_mass_hhinv = new TH1D("h_mass_hhinv" ,(fout.str()).c_str() ,500 ,0.  ,5000) ; 
   fout.str(std::string());
   fout.clear() ;
 
@@ -61,7 +75,7 @@ void readerExample(std::string fname, int rescode, int maxEvents) {
   int nevents(0) ; 
   while ( reader1.readEvent() && nevents < maxEvents) {
     TLorentzVector p4_res;
-    Vp4 vp4_H, vp4_qfromT, vp4_HfromT ; 
+    Vp4 vp4_Z, vp4_W, vp4_H, vp4_qfromT, vp4_HfromT ; 
 
     for(int ii=0;ii < reader1.hepeup.NUP;ii++){
       //cout << " ii =" << ii << " pid = " << reader1.hepeup.IDUP[ii] 
@@ -70,6 +84,16 @@ void readerExample(std::string fname, int rescode, int maxEvents) {
       //  << endl; 
       if ( abs(reader1.hepeup.IDUP[ii]) == rescode ) {
         p4_res.SetPxPyPzE(reader1.hepeup.PUP[ii][0], reader1.hepeup.PUP[ii][1], reader1.hepeup.PUP[ii][2], reader1.hepeup.PUP[ii][3]) ; 
+      }
+      else if ( abs(reader1.hepeup.IDUP[ii]) == 23 ) {
+        TLorentzVector p4_Z ; 
+        p4_Z.SetPxPyPzE(reader1.hepeup.PUP[ii][0], reader1.hepeup.PUP[ii][1], reader1.hepeup.PUP[ii][2], reader1.hepeup.PUP[ii][3]) ; 
+        vp4_Z.push_back(p4_Z) ; 
+      }
+      else if ( abs(reader1.hepeup.IDUP[ii]) == 24 ) {
+        TLorentzVector p4_W ; 
+        p4_W.SetPxPyPzE(reader1.hepeup.PUP[ii][0], reader1.hepeup.PUP[ii][1], reader1.hepeup.PUP[ii][2], reader1.hepeup.PUP[ii][3]) ; 
+        vp4_W.push_back(p4_W) ; 
       }
       else if ( abs(reader1.hepeup.IDUP[ii]) == 25 ) {
         TLorentzVector p4_H ; 
@@ -92,6 +116,18 @@ void readerExample(std::string fname, int rescode, int maxEvents) {
     
     h_mass_res -> Fill(p4_res.Mag()) ; 
 
+    for ( it_Vp4 it = vp4_Z.begin(); it != vp4_Z.end(); ++it) { 
+      for ( it_Vp4 jt = it+1; jt != vp4_Z.end(); ++jt) { 
+        h_mass_zzinv -> Fill ( (*it + *jt).Mag() ) ; 
+      }
+    }
+    
+    for ( it_Vp4 it = vp4_W.begin(); it != vp4_W.end(); ++it) { 
+      for ( it_Vp4 jt = it+1; jt != vp4_W.end(); ++jt) { 
+        h_mass_wwinv -> Fill ( (*it + *jt).Mag() ) ; 
+      }
+    }
+    
     for ( it_Vp4 it = vp4_H.begin(); it != vp4_H.end(); ++it) { 
       for ( it_Vp4 jt = it+1; jt != vp4_H.end(); ++jt) { 
         h_mass_hhinv -> Fill ( (*it + *jt).Mag() ) ; 
